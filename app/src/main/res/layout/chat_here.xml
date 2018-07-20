@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/card_mine"
+        app:cardCornerRadius="7dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="6dp"
+         android:layout_toLeftOf="@+id/my_pic"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:src="@drawable/face"
+                android:id="@+id/image"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="message vr ust . "
+                android:textSize="16dp"
+                android:id="@+id/text_send"
+                android:textColor="#000"
+                android:layout_marginRight="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="6dp"
+                android:id="@+id/time_send"
+                android:text="12.45 pm"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:textColor="@color/colorseentext"
+                android:drawableRight="@drawable/ic_send_mark"
+
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/profile"
+    app:civ_border_width="1.2px"
+    android:id="@+id/my_pic"
+    android:layout_marginRight="8dp"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    app:civ_border_color="#cbcbcb"
+    />
+
+
+</RelativeLayout>

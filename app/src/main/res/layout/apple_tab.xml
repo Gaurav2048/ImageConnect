@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.hdodenhof.circleimageview.CircleImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:civ_border_width="2dp"
+    app:civ_border_color="#d6d3d3"
+    android:id="@+id/face_active"
+    android:src="@drawable/profile"
+    />

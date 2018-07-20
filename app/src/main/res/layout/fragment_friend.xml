@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.saurav.imageconnect.Fragemnt.FriendFragment">
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/chat_ui"
+       android:text="uicht"
+       />
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:id="@+id/chatplus_ui"
+       android:text="uichtzdgf"
+       />
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/ui_chat"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentTop="true"
+       android:text="n;alwel,;"
+       />
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/recyclerview_friends"
+       android:layout_below="@+id/chatplus_ui"
+
+       />
+   <android.support.design.widget.FloatingActionButton
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       app:backgroundTint="@color/colorPrimary"
+       android:id="@+id/action_share"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"
+       android:src="@drawable/ic_invite"
+       android:layout_margin="15dp"
+
+
+       />
+
+</RelativeLayout>

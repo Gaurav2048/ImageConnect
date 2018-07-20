@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saurav.imageconnect.Fragemnt.GroupFragment">
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text=" data "
+
+       android:id="@+id/data_helper"
+       />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="clear messahe"
+       android:id="@+id/clearMessgaeTable"
+       android:layout_gravity="center"
+       />
+</FrameLayout>

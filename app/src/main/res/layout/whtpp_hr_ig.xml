@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="80dp"
+    android:layout_height="80dp">
+<ImageView
+    android:layout_width="80dp"
+    android:layout_marginLeft="2.5dp"
+    android:layout_marginRight="2.5dp"
+    android:scaleType="centerCrop"
+    android:adjustViewBounds="true"
+    android:layout_height="80dp"
+    android:id="@+id/whpp_ge"
+    />
+</RelativeLayout>

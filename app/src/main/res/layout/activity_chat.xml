@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saurav.imageconnect.ChatActivity">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar_custom"
+    android:minHeight="?attr/actionBarSize"
+    android:elevation="6dp"
+    android:background="@color/colorPrimary"
+    app:layout_collapseMode="pin"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile"
+            app:civ_border_color="#cbcbcb"
+            android:id="@+id/pic_profile"
+            android:layout_margin="8dp"
+            app:civ_border_width="1.7dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/pic_profile"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/name__"
+                android:text="Gaurav Vikram"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/activity_status"
+                android:text="online"
+                android:layout_marginTop="4dp"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_file"
+            android:rotation="45"
+            android:padding="4dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Typing"
+        android:id="@+id/typic_indicator"
+        android:layout_above="@+id/sender_layout"
+        android:visibility="invisible"
+        android:textSize="8dp"
+        android:elevation="10dp"
+        android:textColor="#e9632e"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="35dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="@drawable/typing_background"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/displaygkj"
+        android:layout_height="match_parent"
+        android:background="#cbcbcb"
+        android:layout_below="@+id/toolbar_custom"
+        android:orientation="vertical"
+        android:layout_above="@+id/sender_layout"
+
+        ></LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="match_parent"
+        android:id="@+id/chat_recyclerview"
+        android:layout_below="@+id/toolbar_custom"
+        android:layout_above="@+id/sender_layout"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:paddingTop="5dp"
+android:paddingBottom="5dp"
+    android:id="@+id/sender_layout"
+    android:background="#e6e6e6"
+    android:layout_height="wrap_content">
+  
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/ic_image"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="6dp"
+    android:id="@+id/gallary"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    />
+    <RelativeLayout
+        android:layout_toLeftOf="@+id/send_message"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/gallary"
+        android:background="@drawable/chat_inbox_back"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_toLeftOf="@+id/soud_record"
+            android:id="@+id/messsage_edittext"
+
+
+            />
+    <ImageView
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/recorder_back"
+        android:src="@drawable/ic_sound_record"
+        android:layout_margin="3dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/soud_record"
+
+        />
+    </RelativeLayout>
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_alignParentRight="true"
+    android:id="@+id/send_message"
+    android:layout_marginRight="5dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="5dp"
+    android:src="@drawable/ic_sendm"
+
+
+    />
+</RelativeLayout>
+    <!--<com.stfalcon.chatkit.messages.MessagesList
+        android:id="@+id/messagesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_custom"
+        android:layout_above="@+id/input"
+        android:layout_centerHorizontal="true" />
+
+    <com.stfalcon.chatkit.messages.MessageInput
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:attachmentButtonBackground="@drawable/attachmet_button_background"
+        app:showAttachmentButton="true"
+        android:elevation="4dp"
+        app:attachmentButtonIcon="@drawable/ic_image"
+        app:attachmentButtonDefaultIconColor="@color/white"
+        app:attachmentButtonDefaultIconPressedColor="@color/white_four"
+        app:inputButtonBackground="@drawable/input_button_background"
+        app:inputButtonHeight="30dp"
+        app:inputButtonIcon="@drawable/ic_send_selector"
+        app:inputButtonMargin="16dp"
+        app:inputButtonWidth="30dp"
+         app:inputMaxLines="3"
+        app:inputTextColor="@color/black"
+        app:inputTextSize="18sp"
+
+        app:inputHint="type text here "/>
+
+
+
+    <android.support.design.widget.TabLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/cht_tablayout"
+        android:background="#fff"
+
+        android:clipToPadding="false"
+        app:tabMaxWidth="70dp"
+        app:tabMinWidth="50dp"
+        android:layout_alignParentTop="true"
+         android:layout_marginTop="5dp"
+        android:layout_gravity="bottom"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/chat_tab_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cht_tablayout"
+        android:background="#fff"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saurav.imageconnect.ImageSendActivity">
+<com.example.saurav.imageconnect.utils.TouchImageView
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent"
+    android:id="@+id/touch_view"
+
+
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_cancel_image"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/cancel_wedgit"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="#cbcbcb"
+            app:civ_border_width="1.5px"
+            android:layout_toRightOf="@+id/cancel_wedgit"
+            android:layout_margin="8dp"
+            />
+       <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_text_edit"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+           android:id="@+id/edit_text"
+            android:layout_centerVertical="true"
+
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/text"
+            android:src="@drawable/ic_text"
+            android:layout_toLeftOf="@+id/edit_text"
+             android:layout_margin="8dp"
+            android:layout_centerVertical="true"
+
+
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_face_im"
+            android:layout_toLeftOf="@+id/text"
+            android:layout_margin="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/face"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_rotate"
+            android:layout_toLeftOf="@+id/face"
+            android:layout_margin="8dp"
+            android:layout_centerVertical="true"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:hint="add a caption ..."
+        android:textColorHint="#e4e3e3"
+        android:background="@android:color/transparent"
+        android:textSize="18dp"
+        android:padding="9dp"
+        android:id="@+id/message_binded"
+        android:layout_toLeftOf="@+id/image_message_send"
+
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_image_send"
+        app:civ_circle_background_color="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/image_message_send"
+
+        />
+    </RelativeLayout>
+</RelativeLayout>

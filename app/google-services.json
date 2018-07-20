@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "31070271848",
+    "firebase_url": "https://imageconnect-e7c3c.firebaseio.com",
+    "project_id": "imageconnect-e7c3c",
+    "storage_bucket": "imageconnect-e7c3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31070271848:android:3061138e450c07b2",
+        "android_client_info": {
+          "package_name": "com.example.saurav.imageconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31070271848-9f71digcif8icdl8vlmbcbppbue4cjpj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saurav.imageconnect",
+            "certificate_hash": "3b2f663e624bf6e55dcf8d5be2ec785f4099f750"
+          }
+        },
+        {
+          "client_id": "31070271848-fqf7o3cmjnlntobn7jjceqf919hvsogm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "31070271848-fqf7o3cmjnlntobn7jjceqf919hvsogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx5Z6uT0VRyLZSX7dVi184PbEWFJbSdfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31070271848-fqf7o3cmjnlntobn7jjceqf919hvsogm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
